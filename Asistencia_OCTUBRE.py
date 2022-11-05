@@ -4,9 +4,11 @@ codigo
 ------------------- 
 """
 """
-#Gabriel Hidalgo
-codigo
-------------------- 
+
+
+
+
+# HIDALGO GABRIEL
 
 class Persona: #Creamos una clase
     def __init__(self, nombre, apellido, dni, edad, *args, **kwargs): #Se lo llama metodo Init Dunder
@@ -28,8 +30,12 @@ persona1 = Persona('Ariel', 'Betancud', 355855,40) # Nesecitamos enviar argument
 print(f'El objeto1 de la clase persona: {persona1.nombre} {persona1.apellido} Su edad es: {persona1.edad}')
 
 """
+#---------------------------------------------------------------------------------------------
 
-# Fernando Calisaya
+
+
+# CALISAYA FERNANDO
+
 class Aritmetica:
     def __init__(self, operandoA, operandoB):
         self.operandoA = operandoA
@@ -48,4 +54,34 @@ print(f'La suma de los números es: {aritmetica1.sumar()}')
 print(f'la resta de los números es: {aritmetica1.resta()}')
 print(f'La multiplicación de los números es: {aritmetica1.multiplicar()}')
 print(f'La división de los números es: {aritmetica1.dividir():.2f}')
-# ------------------------------------
+
+# --------------------------------------------------------------------------------------------
+
+
+
+# MORALES CASTRO DANISA
+
+class Cubo:
+    """
+    Crear la clase Cubo con los atributos, ancho, alto y profundidad,
+    con un método calcular_volumen que tendría la formula:
+    volumen = ancho * altura * profundidad
+    que el usuario ingrese valores.
+    """
+
+    def __init__(self, ancho, altura, profundidad):
+        self.ancho = ancho
+        self.altura = altura
+        self.profundidad = profundidad
+
+    def calcular_volumen(self):
+        return self.ancho * self.altura * self.profundidad
+
+ancho = int(input("Digite el ancho del cubo: "))
+altura = int(input("Digite la altura del cubo: "))
+profundidad = int(input("Digite la profundidad del cubo: "))
+
+cubo1 = Cubo(ancho, altura, profundidad)
+print(f"El volumen del cubo es: {cubo1.calcular_volumen()}")
+
+#-----------------------------------------------------------------------------------------------
