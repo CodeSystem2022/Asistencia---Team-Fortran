@@ -1,3 +1,5 @@
+# MORALES CASTRO DANISA
+
 class Persona:
     contador_personas = 0   # Variable de clase
 
@@ -26,3 +28,4 @@ persona4 = Persona('Natalia', 35)
 print(persona4)
 print(f'Valor contador personas: {Persona.contador_personas}')
 
+#-------------------------------------------------------------------------------
